@@ -23,7 +23,7 @@ CSRF_TRUSTED_ORIGINS = ['https://s15-20-n-python-react.onrender.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg',
+        'ENGINE': 'django.db.backends.psycopg2',
         'NAME': os.environ.get('POSTGRES_DB'),
         'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
