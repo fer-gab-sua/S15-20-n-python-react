@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from my_site.settings.common import *
 
-
+# Instance of dotenv to load environment variables
 load_dotenv()
 
 # Quick-start development settings - unsuitable for production
@@ -10,8 +10,6 @@ load_dotenv()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
-
-print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
