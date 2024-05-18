@@ -1,5 +1,9 @@
 import os
+from dotenv import load_dotenv
 from my_site.settings.common import *
+
+
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -23,7 +27,7 @@ CSRF_TRUSTED_ORIGINS = ['https://s15-20-n-python-react.onrender.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ.get('POSTGRES_DB'),
         'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),

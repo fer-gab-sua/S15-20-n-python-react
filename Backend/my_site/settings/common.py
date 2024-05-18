@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = 'my_site.asgi.application'
+WSGI_APPLICATION = 'my_site.wsgi.application'
 
 
 # Password validation
