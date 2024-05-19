@@ -3,6 +3,7 @@ Brotli==1.1.0
 cachetools==5.3.3
 chardet==5.2.0
 colorama==0.4.6
+coverage==7.5.1
 distlib==0.3.8
 Django==5.0.6
 django-cors-headers==4.3.1
