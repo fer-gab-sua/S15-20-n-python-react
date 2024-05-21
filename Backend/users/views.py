@@ -1,6 +1,6 @@
-from django.auth import get_user_model
+from django.contrib.auth import get_user_model
 from users.serializers import UserSerializer
-from rest_framework import generics
+from rest_framework import generics, filters
 
 
 # Instance of User model
@@ -12,6 +12,8 @@ User = get_user_model()
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['mail', ]
 
 
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
