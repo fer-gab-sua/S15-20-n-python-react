@@ -9,13 +9,13 @@ User = get_user_model()
 # Create your views here.
 
 
-class UserList(generics.ListCreateAPIView):
+class UserListView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['mail', ]
 
 
-class UserDetail(generics.RetrieveUpdateDestroyAPIView):
+class UserDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer

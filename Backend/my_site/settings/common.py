@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Local apps
-    'healthz.apps.HealthzConfig',
+    'health.apps.HealthConfig',
     'users.apps.UsersConfig',
 
     # 3rd party apps
