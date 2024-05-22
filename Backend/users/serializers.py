@@ -12,21 +12,5 @@ User = get_user_model()
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'password', 'first_name',
-                  'last_name',]
+        fields = ['username', 'email', 'password', ]
         extra_kwargs = {'password': {'write_only': True}, }
-
-    def validate(self, data):
-        user = User(**data)
-        password = data.get('password')
-
-        if not password:
-            raise serializers.ValidationError(
-                'Favor indique el password para validar el usuario dado')
-
-        try:
-            validate_password(password, user)
-        except exceptions.ValidationError as exc:
-            raise serializers.ValidationError(str(exc))
-
-        return data
