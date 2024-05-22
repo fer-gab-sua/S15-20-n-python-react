@@ -13,6 +13,14 @@ DEBUG = True
 # CORS
 CORS_ALLOW_ALL_ORIGINS = True
 
+# CSRF
+CSRF_TRUSTED_ORIGINS = ['http://localhost',
+                        'http://127.0.0.1',
+                        'https://localhost',
+                        'https://127.0.0.1',
+                        'https://s15-20-n-python-react.onrender.com']
+
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
