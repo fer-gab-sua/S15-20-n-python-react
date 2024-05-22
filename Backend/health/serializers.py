@@ -8,4 +8,6 @@ from .models import HealthTest
 class HealthSerializer(serializers.ModelSerializer):
     class Meta:
         model = HealthTest
-        fields = 'message'
+        fields = ['message', 'created']
+        extra_fields = {'created': {'read_only': True},
+                        'message': {'read_only': True}}

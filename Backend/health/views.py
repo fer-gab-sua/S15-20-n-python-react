@@ -8,6 +8,7 @@ from health.serializers import HealthSerializer
 # Create your views here.
 class HealthListView(generics.ListCreateAPIView):
     serializer_class = HealthSerializer
+    queryset = HealthTest.objects.all()
 
     def index(request):
         response = HealthTest.objects.first()

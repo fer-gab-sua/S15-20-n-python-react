@@ -18,4 +18,3 @@ class HealthTest(models.Model):
     class Meta:
         db_table = 'health'
         verbose_name = 'salud'
-        ordering = ['-id']

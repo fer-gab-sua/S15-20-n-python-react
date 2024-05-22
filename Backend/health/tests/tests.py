@@ -1,15 +1,27 @@
 from rest_framework.test import APITestCase
-from health.views import HealthListView
+from django.http import HttpResponse
+from health.models import HealthTest
 
 # Create your tests here.
 
 
-class HealthTestCase(APITestCase):
-    def test_create_message(self):
-        request = self.client.post(
-            '/health/', {'message': 'El servicio se encuentra en operativo'}, format='json')
+class HealthListViewTests(APITestCase):
+    def setUp(self):
+        self.health_test = HealthTest.objects.create(message='Test message')
+
+    def test_index_returns_http_response(self):
+        request = self.client.get('/health/')
+        self.assertIsInstance(request, HttpResponse)
+
+    def test_index_returns_200(self):
+        request = self.client.get('/health/')
         self.assertEqual(request.status_code, 200)
 
-    def test_health_check_url(self):
-        response = self.client.get('/health/')
-        self.assertEqual(response.status_code, 200)
+    def test_index_html_content_equal_stored_message(self):
+        request = self.client.get('/health/')
+        self.assertEqual(request.content, b'Test message')
+
+    def test_index_returns_none_when_no_health_tests(self):
+        HealthTest.objects.all().delete()
+        request = self.client.get('/health/')
+        self.assertEqual(request.content, b'None')
