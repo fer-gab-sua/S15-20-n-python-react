@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from datetime import date
 
-
 # Model for role types
 class RoleType(models.Model):
     EDITOR = 'editor'
