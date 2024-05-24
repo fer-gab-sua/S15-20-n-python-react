@@ -2,6 +2,7 @@
 python -m venv ..\.venv
 
 # Activar el entorno virtual
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ..\.\.venv\Scripts\activate
 
 # Instalar las dependencias
