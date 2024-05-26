@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'health.apps.HealthConfig',
     'users.apps.UsersConfig',
     'core',
-    
+
     # 3rd party apps
     'rest_framework',
     'corsheaders',
