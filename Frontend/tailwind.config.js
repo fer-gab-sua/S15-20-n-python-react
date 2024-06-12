@@ -13,7 +13,8 @@ export default {
         'cream' : '#F4CA8D',
         'greentag': '#EBFAE2',
         'greentexttag': '#4F9C20',
-        'boardbg': '#000714',
+        'boardbg': '#333A46',
+        'columtext': '#FAFBFC',
 
       },
     },
