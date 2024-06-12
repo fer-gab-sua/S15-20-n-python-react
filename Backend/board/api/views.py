@@ -118,3 +118,4 @@ class BoardDetailCreateApiView(generics.RetrieveUpdateDestroyAPIView):
         return super().delete(request, *args, **kwargs)
     
 
+

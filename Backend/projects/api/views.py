@@ -39,7 +39,7 @@ class ProjectListCreateApiView(generics.ListCreateAPIView):
     
     def perform_create(self, serializer):
         if self.request.user.is_authenticated:
-            serializer.save(propietary=self.request.user, status='In_progress')
+            serializer.save(propietary=self.request.user)
         else:
             raise PermissionDenied("El usuario debe estar autenticado para crear un proyecto.")
 
@@ -116,4 +116,3 @@ class ProjectDetailCreateApiView(generics.RetrieveUpdateDestroyAPIView):
         instance.is_active = False
         instance.save()
         return Response({"detail": "Proyecto eliminado correctamente."}, status=status.HTTP_204_NO_CONTENT)
-
