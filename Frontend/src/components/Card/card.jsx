@@ -42,11 +42,12 @@ const Card = ({ title, date, timeLeft, comments, files }) => {
       {/* Title & button actions */}
       <div className="flex justify-between items-center mt-2">
         <h3 className="text-lg font-bold">{title}</h3>
+
         <div className="relative">
           <button
             onClick={handleMenuToggle}
             className="h-5 w-5 border border-slate-400 rounded-md text-center flex items-center justify-center"
-            >
+          >
             <img src={moreHorizontal} alt="" className='h-5 w-5' />
           </button>
           {isMenuOpen && (
