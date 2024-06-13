@@ -7,11 +7,11 @@ import commentsIcon from '../../assets/svg/commentsIcon.svg';
 import filesIcon from '../../assets/svg/filesIcon.svg';
 import moreHorizontal from '../../assets/svg/more-horizontal.svg';
 
-const Card = ({ title, date, timeLeft, comments, files , imagen}) => {
-  const cardInfo = {
+const Card = ({ title, date, timeLeft, comments, files , imagen, tags}) => {
+  /*const cardInfo = {
     tags: ['Bugs', 'Feedback', 'Algo'],
 
-  };
+  };*/
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,8 +35,8 @@ const Card = ({ title, date, timeLeft, comments, files , imagen}) => {
     <article className="mt-4 p-4 rounded-lg bg-white">
       {/* Tags */}
       <div className="flex space-x-2">
-        {cardInfo.tags.map((tag, index) => (
-          <TagsCards key={index} text={tag} colorTag="bg-greentag" textColor="text-greentexttag" />
+      {tags.map((tag, index) => (
+          <TagsCards key={index} text={tag.text} colorTag={tag.color} textColor="text-greentexttag" />
         ))}
       </div>
       {/* Title & button actions */}
