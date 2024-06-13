@@ -1,17 +1,34 @@
-// Card.js
-import React from 'react';
+import React, { useState } from 'react';
 import TagsCards from './tagsCards';
 import cardImage from '../../assets/img/card-image.png';
 import flagIcon from '../../assets/svg/Flag.svg';
 import userImg from '../../assets/img/userimg.png';
-import commentsIcon from '../../assets/svg/commentsIcon.svg'
-import filesIcon from '../../assets/svg/filesIcon.svg'
-import moreHorizontal from '../../assets/svg/more-horizontal.svg'
+import commentsIcon from '../../assets/svg/commentsIcon.svg';
+import filesIcon from '../../assets/svg/filesIcon.svg';
+import moreHorizontal from '../../assets/svg/more-horizontal.svg';
 
 const Card = ({ title, date, timeLeft, comments, files }) => {
   const cardInfo = {
     tags: ['Bugs', 'Feedback', 'Algo'],
     img: cardImage
+  };
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleEdit = () => {
+    // Lógica para editar la carta
+    console.log('Editar carta:', title);
+    setIsMenuOpen(false); 
+  };
+
+  const handleDelete = () => {
+    // Lógica para eliminar la carta
+    console.log('Eliminar carta:', title);
+    setIsMenuOpen(false); 
   };
 
   return (
@@ -24,10 +41,31 @@ const Card = ({ title, date, timeLeft, comments, files }) => {
       </div>
       {/* Title & button actions */}
       <div className="flex justify-between items-center mt-2">
-        <h3 className="text-lg">{title}</h3>
-        <button className="h-5 w-5 border border-slate-400 rounded-md text-center flex items-center justify-center">
-          <img src={moreHorizontal} alt="" />
-        </button>
+        <h3 className="text-lg font-bold">{title}</h3>
+        <div className="relative">
+          <button
+            onClick={handleMenuToggle}
+            className="h-5 w-5 border border-slate-400 rounded-md text-center flex items-center justify-center"
+          >
+            <img src={moreHorizontal} alt="" className='h-5 w-5' />
+          </button>
+          {isMenuOpen && (
+            <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+              <button
+                onClick={handleEdit}
+                className="block w-full py-2 text-left px-4 hover:bg-gray-100"
+              >
+                Edit
+              </button>
+              <button
+                onClick={handleDelete}
+                className="block w-full py-2 text-left px-4 hover:bg-gray-100"
+              >
+                Delete
+              </button>
+            </div>
+          )}
+        </div>
       </div>
       {/* Image */}
       {cardInfo.img && (
@@ -59,6 +97,6 @@ const Card = ({ title, date, timeLeft, comments, files }) => {
       </div>
     </article>
   );
-}
+};
 
 export default Card;
