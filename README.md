@@ -47,33 +47,11 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Equipo de desarrollo S15-20-N-Python-React
 
-### Team Lider / Diseño UI/UX
+### Team Lider 
 
-#### _Julia Solier_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)]()
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julia-solier/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://github.com/juliasolier)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:julia.solier75@gmail.com)
+ OSCAR ARAUJO 
 
 ### Frontend
-
-#### - _Raul Madero_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raulmadero/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://github.com/Raul-madero)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:r.madero.ramire@gmail.com)
-
-#### - _Jeffer Romero_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jefferc-romero/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://www.github.com/Camilop4)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jcrp_2005@hotmail.com)
 
 #### - _Tomas Gabriel Aquino Bajusz_
 
@@ -83,13 +61,6 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://www.github.com/TomasGaAqBz)
 [![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tomasaquinogabi@gmail.com)
 
-#### - _Isaías Robles Vega_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaías-robles-vega-9b4b87220/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://github.com/isak4567)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:isaiasrv44@gmail.com)
 
 ### Backend
 
@@ -116,22 +87,6 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
 [![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://www.github.com/DamBeDev)
 [![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:d.berrojalvis@gmail.com)
-
-#### - _Cristian Carballo_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cristiancarballo/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://www.github.com/CristianCarballo)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:cristian.carballo1994@gmail.com)
-
-#### - _Andrea Otálora_
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-grey?style=flat&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devandrea/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/)
-[![github](https://img.shields.io/badge/github-grey?style=flat&logo=github&logoColor=white)](https://www.github.com/titaotalora)
-[![mail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:andreaotalora9509@gmail.com)
 
 #### - _Rene Rolando Ccoyto Pachapuma_
 
