@@ -7,10 +7,10 @@ import commentsIcon from '../../assets/svg/commentsIcon.svg';
 import filesIcon from '../../assets/svg/filesIcon.svg';
 import moreHorizontal from '../../assets/svg/more-horizontal.svg';
 
-const Card = ({ title, date, timeLeft, comments, files }) => {
+const Card = ({ title, date, timeLeft, comments, files , imagen}) => {
   const cardInfo = {
     tags: ['Bugs', 'Feedback', 'Algo'],
-    img: cardImage
+
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,9 +69,9 @@ const Card = ({ title, date, timeLeft, comments, files }) => {
         </div>
       </div>
       {/* Image */}
-      {cardInfo.img && (
+      {imagen && (
         <div className="mt-2">
-          <img src={cardInfo.img} alt="Card Image" />
+          <img src={imagen} alt="Card Image" />
         </div>
       )}
       {/* Deadline & time left */}
