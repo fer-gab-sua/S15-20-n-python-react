@@ -49,7 +49,7 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ### Team Lider 
 
- OSCAR ARAUJO 
+### OSCAR ARAUJO 
 
 ### Frontend
 
