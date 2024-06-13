@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Colum from "./Colum";
 import Card from "../Card/card";
 import AddCard from '../Card/AddCard';
-
+import imagen1 from '../../assets/img/cards/imagen1.png'
 
 const Board = () => {
   const [columns, setColumns] = useState({
     todo: [
-      { title: "Hacer un bosquejo del cartel para el sitio", date: "2024-06-15", timeLeft: 3, comments: 16, files: 0 },
+      { title: "Hacer un bosquejo del cartel para el sitio", date: "2024-06-15", timeLeft: 3, comments: 16, files: 0 , imagen: imagen1 },
       { title: "Editar los borradores de correo electronico",date: "2024-06-15", timeLeft: 3, comments: 12, files: 2},
     ],
     inProgress: [
