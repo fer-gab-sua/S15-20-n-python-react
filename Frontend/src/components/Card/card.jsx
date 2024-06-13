@@ -46,7 +46,7 @@ const Card = ({ title, date, timeLeft, comments, files }) => {
           <button
             onClick={handleMenuToggle}
             className="h-5 w-5 border border-slate-400 rounded-md text-center flex items-center justify-center"
-          >
+            >
             <img src={moreHorizontal} alt="" className='h-5 w-5' />
           </button>
           {isMenuOpen && (
